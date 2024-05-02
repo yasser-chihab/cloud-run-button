@@ -9,7 +9,8 @@ click.
 Try it out with a "hello, world" Go application ([source](https://github.com/GoogleCloudPlatform/cloud-run-hello)):
 
 [![Run on Google
-Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/GoogleCloudPlatform/cloud-run-hello.git)
+Cloud](https://deploy.cloud.run/button.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=github.com/GoogleCloudPlatform/cloud-run-hello.git&cloudshell_image=us-east1-docker.pkg.dev/journify-registry/journify-public/cloudshell-custom)
+
 
 ### Demo
 
