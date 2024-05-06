@@ -21,14 +21,14 @@ import (
 	"path/filepath"
 )
 
-func dockerAuthenticate() error {
-	cmd := exec.Command("gcloud", "auth", "configure-docker")
-	b, err := cmd.CombinedOutput()
-	if err != nil {
-		return fmt.Errorf("docker authentication failed: %v, output:\n%s", err, string(b))
-	}
-	return nil
-}
+//func dockerAuthenticate() error {
+//	cmd := exec.Command("gcloud", "auth", "configure-docker")
+//	b, err := cmd.CombinedOutput()
+//	if err != nil {
+//		return fmt.Errorf("docker authentication failed: %v, output:\n%s", err, string(b))
+//	}
+//	return nil
+//}
 
 func dockerBuild(dir, image string) error {
 	cmd := exec.Command("docker", "build", "--quiet", "--tag", image, dir)

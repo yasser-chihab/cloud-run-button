@@ -386,7 +386,7 @@ func run(opts runOpts) error {
 	}
 
 	if pushImage {
-		err = dockerAuthenticate()
+		//err = dockerAuthenticate()
 		fmt.Println(infoPrefix + " FYI, running the following command:")
 		cmdColor.Printf("\tdocker push %s\n", parameter(image))
 		end = logProgress("Pushing container image...",

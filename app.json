@@ -1,0 +1,16 @@
+{
+    "name": "journify-proxy",
+    "build": {
+        "skip": true,
+        "buildpacks": {
+            "builder": "us-east1-docker.pkg.dev/journify-registry/journify-public"
+        }
+    },
+    "hooks": {
+        "prebuild": {
+            "commands": [
+                "gcloud auth configure-docker"
+            ]
+        }
+    }
+}
